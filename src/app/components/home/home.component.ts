@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from "../footer/footer.component";
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,5 +10,12 @@ import { FooterComponent } from "../footer/footer.component";
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
- 
+
+  constructor(
+    private router: Router,
+  ) { }
+  view() {
+    this.router.navigate(['/services']);
+  }
+
 }

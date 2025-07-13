@@ -1,0 +1,66 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/images/kitchen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: white;
+    z-index: -1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); // Top to bottom shade
+        pointer-events: none;
+        z-index: 1;
+    }
+}
+
+.container1 {
+    margin-top: 5px;
+    background-color: #381e1e;
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1; // Ensure content is above the background
+}
+
+.hovering {
+    .img {
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        border-radius: 20px;
+        transition: all ease 0.3s;
+        aspect-ratio: 3/2;
+        align-items: center;
+        justify-content: center;
+    }
+    padding: 10px;
+    border: 0px solid #381e1e;
+    background-color: #381e1e;
+    height: 500px;
+    transition: all ease 0.3s;
+}
+
+.hovering:hover {
+    background-color: #d13535;
+    cursor: pointer;
+}
+
+.logo {
+    max-width: 150px;
+}
