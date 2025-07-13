@@ -1,0 +1,1 @@
+import{pa as n,va as o,wa as c,za as s}from"./chunk-4T6KNT6Y.js";var a=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-contact-us"]],decls:2,vars:0,template:function(t,i){t&1&&(o(0,"p"),s(1,"contact-us works!"),c())},encapsulation:2})};export{a as ContactUsComponent};
