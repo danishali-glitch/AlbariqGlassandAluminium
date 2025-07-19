@@ -1,13 +1,12 @@
-<div class="home-background"></div>
+<div class="background">
+<img src="assets/images/background1.jpg" alt="">
+</div>
+
 <div class="container-fluid">
 
-    <div class="row">
-        <div class="col-md-12">
-            <h1 style="color: #fff;" class="text-center">Welcome to Albariq Alsahir Glass and Aluminium</h1>
-            <p style="color: #fff;" class="text-center">Your one-stop solution for all glass and aluminium needs.</p>
-        </div>
-    </div>
+  
     <div class="space"></div>
+     <div class="space"></div>
 
     <div class="row mt-5">
         <div class="col-md-5">
@@ -15,10 +14,10 @@
                 Efficient And Reliable Services
             </h1>
             <div class="justify-content-center text-align-center align-item-center mx-auto">
-                <button class="btn btn-primary mx-3">
+                <button class="btn btn-primary mx-3" (click)="openWhatsApp()" >
                     Contact Us
                 </button>
-                <button class="btn btn-secondary mx-3">
+                <button class="btn btn-secondary mx-3" (click)="view()">
                     Our Services
                 </button>
             </div>
@@ -85,11 +84,11 @@
             <h1 style=" font-size: 36px; font-weight: 800;">
                 An Exceptionally Unique Experience Tailored To You
             </h1>
-            <div class="justify-content-center text-align-center align-item-center mx-auto mt-5">
-                <button class="btn btn-primary mx-3">
+            <div class="justify-content-center text-align-center align-item-center mx-auto">
+                <button class="btn btn-primary mx-3" (click)="openWhatsApp()" >
                     Contact Us
                 </button>
-                <button class="btn btn-secondary mx-3">
+                <button class="btn btn-secondary mx-3" (click)="view()">
                     Our Services
                 </button>
             </div>
@@ -124,7 +123,7 @@
             Free Quotation For Any Job
         </h1>
         <p style="font-size: 18px; color: #fff;">
-            At UAE Glass Aluminum, we offer a free, no-obligation quotation for any project, big or small. Our
+            At <strong>Albariq Alsahir Glass & Aluminium</strong>, we offer a free, no-obligation quotation for any project, big or small. Our
             transparent pricing and detailed quotes ensure that you have all the information you need to make informed
             decisions. Let us help you plan your next glass or aluminum project with confidence.
         </p>

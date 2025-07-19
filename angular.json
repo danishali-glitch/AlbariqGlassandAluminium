@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/albariqglassand-aluminium",
+            "outputPath": "dist/AlbariqGlassandAluminium",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -30,6 +30,11 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
+              },
+              {
+                "glob": "sitemap.xml",
+                "input": "src",
+                "output": "."
               }
             ],
             "styles": [
@@ -44,6 +49,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/AlbariqGlassandAluminium/",
               "budgets": [
                 {
                   "type": "initial",
@@ -95,6 +101,11 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
+              },
+              {
+                "glob": "sitemap.xml",
+                "input": "src",
+                "output": "."
               }
             ],
             "styles": [

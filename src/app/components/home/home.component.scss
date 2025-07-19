@@ -1,27 +1,22 @@
-.home-background {
+.background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/assets/images/background1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), center/cover no-repeat;
+    background-blend-mode: overlay;
     overflow: hidden;
     color: white;
     z-index: -1;
-
-    &::after {
-        content: '';
+    img {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); // Top to bottom shade
-        pointer-events: none;
-        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -2;
     }
 }
 

@@ -8,17 +8,32 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a style="color: #fff;" class="nav-link active" aria-current="page" href="#">Home</a>
+          <button class="btn mx-3" style="color: #fff;" (click)="navigate('/')">
+            <i class="fa-solid fa-house"></i>
+            Home
+
+          </button>
+
         </li>
         <li class="nav-item">
-          <a style="color: #fff;" class="nav-link" href="/services">Services</a>
+          <button class="btn  mx-3" style="color: #fff;" (click)="navigate('/services')">
+            <i class="fa-solid fa-briefcase"></i>
+            Services
+
+          </button>
         </li>
         <li class="nav-item">
-          <a style="color: #fff;" class="nav-link" href="/about">About Us</a>
+          <button class="btn  mx-3" style="color: #fff;" (click)="navigate('/about')">
+           <i class="fa-solid fa-circle-info"></i>
+            About Us
+          </button>
         </li>
-        <li class="nav-item">
-          <a style="color: #fff;" class="nav-link" href="/contact">Contact Us</a>
-        </li>
+        <!-- <li class="nav-item">
+          <button class="btn  mx-3" style="color: #fff;" (click)="navigate('/contact')">
+            <i class="fa-solid fa-envelope"></i>
+            Contact Us
+          </button>
+        </li> -->
       </ul>
     </div>
   </div>
